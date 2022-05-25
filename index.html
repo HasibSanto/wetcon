@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
-<title>Pounds to Kilograms Weight Converter</title>
+<head>
+<title>Pounds to KG</title>
+<style>
+  body{
+    background: green;
+    text-align: center;
+    color: #fff;
+    margin: 200px auto;
+    font-size: 42px;
+  }
+  input#inputPounds {
+    color: red;
+    width: 20%;
+    height: 60px;
+    font-size: 28px;
+    /* padding-left: 40px; */
+    text-align: center;
+    font-weight: 900;
+    border: none;
+    margin-left: 20px;
+}
+</style>
+</head>
 <body>
 
-<h2>Weight Converter</h2>
-<p>Type a value in the Pounds field to convert the value to Kilograms:</p>
+<h2>Pound To KG Converter</h2>
+<p>তুমি কত মোটা তা জানতে পাউন্ড দাও</p>
 
 <p>
   <label>Pounds</label>
-  <input id="inputPounds" type="number" placeholder="Pounds" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+  <input id="inputPounds" type="number" placeholder=" example: 132" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
 </p>
 <p>Kilograms: <span id="outputKilograms"></span></p>
 
